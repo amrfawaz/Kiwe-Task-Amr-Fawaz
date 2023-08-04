@@ -7,23 +7,79 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		390AEF72EE020EE17C6377D7 /* Pods_Kiwe_Task.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DB3D2954FE2D710ACBB1A8C /* Pods_Kiwe_Task.framework */; };
 		A3FE8F4C2A7B937200DB92AE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3FE8F4B2A7B937200DB92AE /* AppDelegate.swift */; };
-		A3FE8F4E2A7B937200DB92AE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3FE8F4D2A7B937200DB92AE /* SceneDelegate.swift */; };
 		A3FE8F502A7B937200DB92AE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3FE8F4F2A7B937200DB92AE /* ViewController.swift */; };
 		A3FE8F532A7B937200DB92AE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A3FE8F512A7B937200DB92AE /* Main.storyboard */; };
 		A3FE8F552A7B937400DB92AE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A3FE8F542A7B937400DB92AE /* Assets.xcassets */; };
 		A3FE8F582A7B937400DB92AE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A3FE8F562A7B937400DB92AE /* LaunchScreen.storyboard */; };
+		A3FE8F652A7B941D00DB92AE /* UIViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3FE8F622A7B941D00DB92AE /* UIViewController+Extensions.swift */; };
+		A3FE8F662A7B941D00DB92AE /* NSObject+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3FE8F632A7B941D00DB92AE /* NSObject+Extension.swift */; };
+		A3FE8F672A7B941D00DB92AE /* UITableViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3FE8F642A7B941D00DB92AE /* UITableViewController+Extension.swift */; };
+		A3FE8F6C2A7B945900DB92AE /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3FE8F692A7B945900DB92AE /* Constants.swift */; };
+		A3FE8F6D2A7B945900DB92AE /* EnvironmentVariables.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3FE8F6A2A7B945900DB92AE /* EnvironmentVariables.swift */; };
+		A3FE8F6E2A7B945900DB92AE /* ErrorModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3FE8F6B2A7B945900DB92AE /* ErrorModel.swift */; };
+		A3FE8F712A7B94A200DB92AE /* Provider.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3FE8F702A7B94A200DB92AE /* Provider.swift */; };
+		A3FE8F782A7B950B00DB92AE /* ViewControllerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3FE8F742A7B950B00DB92AE /* ViewControllerFactory.swift */; };
+		A3FE8F792A7B950B00DB92AE /* CoordinatorFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3FE8F752A7B950B00DB92AE /* CoordinatorFactory.swift */; };
+		A3FE8F7A2A7B950B00DB92AE /* RootCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3FE8F762A7B950B00DB92AE /* RootCoordinator.swift */; };
+		A3FE8F7B2A7B950B00DB92AE /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3FE8F772A7B950B00DB92AE /* Coordinator.swift */; };
+		A3FE8F8F2A7B983500DB92AE /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3FE8F8D2A7B983500DB92AE /* HomeViewController.swift */; };
+		A3FE8F902A7B983500DB92AE /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A3FE8F8E2A7B983500DB92AE /* HomeViewController.xib */; };
+		A3FE8F922A7B985000DB92AE /* HomePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3FE8F912A7B985000DB92AE /* HomePresenter.swift */; };
+		A3FE8F942A7B985C00DB92AE /* HomeInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3FE8F932A7B985C00DB92AE /* HomeInteractor.swift */; };
+		A3FE8F962A7B986700DB92AE /* HomeProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3FE8F952A7B986700DB92AE /* HomeProvider.swift */; };
+		A3FE8F982A7B987000DB92AE /* HomeCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3FE8F972A7B987000DB92AE /* HomeCoordinator.swift */; };
+		A3FE8F9A2A7B98E500DB92AE /* Venues.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3FE8F992A7B98E500DB92AE /* Venues.swift */; };
+		A3FE8F9C2A7C6F7900DB92AE /* LocationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3FE8F9B2A7C6F7900DB92AE /* LocationService.swift */; };
+		A3FE8FA02A7C8E0D00DB92AE /* VenueCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3FE8F9E2A7C8E0D00DB92AE /* VenueCell.swift */; };
+		A3FE8FA12A7C8E0D00DB92AE /* VenueCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A3FE8F9F2A7C8E0D00DB92AE /* VenueCell.xib */; };
+		A3FE8FA32A7CF59600DB92AE /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3FE8FA22A7CF59600DB92AE /* UIView+Extension.swift */; };
+		A3FE8FAA2A7D9B3000DB92AE /* SideMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3FE8FA52A7D9B3000DB92AE /* SideMenuViewController.swift */; };
+		A3FE8FAB2A7D9B3000DB92AE /* SideMenuCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A3FE8FA62A7D9B3000DB92AE /* SideMenuCell.xib */; };
+		A3FE8FAC2A7D9B3000DB92AE /* SideMenuPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3FE8FA72A7D9B3000DB92AE /* SideMenuPresenter.swift */; };
+		A3FE8FAD2A7D9B3000DB92AE /* SideMenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3FE8FA82A7D9B3000DB92AE /* SideMenuCell.swift */; };
+		A3FE8FAE2A7D9B3000DB92AE /* SideMenu.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A3FE8FA92A7D9B3000DB92AE /* SideMenu.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5DB3D2954FE2D710ACBB1A8C /* Pods_Kiwe_Task.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Kiwe_Task.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6EA17B92800C501ECFE9B6BD /* Pods-Kiwe-Task.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kiwe-Task.release.xcconfig"; path = "Target Support Files/Pods-Kiwe-Task/Pods-Kiwe-Task.release.xcconfig"; sourceTree = "<group>"; };
 		A3FE8F482A7B937200DB92AE /* Kiwe-Task.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Kiwe-Task.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A3FE8F4B2A7B937200DB92AE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		A3FE8F4D2A7B937200DB92AE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		A3FE8F4F2A7B937200DB92AE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		A3FE8F522A7B937200DB92AE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A3FE8F542A7B937400DB92AE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A3FE8F572A7B937400DB92AE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A3FE8F592A7B937400DB92AE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A3FE8F622A7B941D00DB92AE /* UIViewController+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extensions.swift"; sourceTree = "<group>"; };
+		A3FE8F632A7B941D00DB92AE /* NSObject+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSObject+Extension.swift"; sourceTree = "<group>"; };
+		A3FE8F642A7B941D00DB92AE /* UITableViewController+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableViewController+Extension.swift"; sourceTree = "<group>"; };
+		A3FE8F692A7B945900DB92AE /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		A3FE8F6A2A7B945900DB92AE /* EnvironmentVariables.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EnvironmentVariables.swift; sourceTree = "<group>"; };
+		A3FE8F6B2A7B945900DB92AE /* ErrorModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ErrorModel.swift; sourceTree = "<group>"; };
+		A3FE8F702A7B94A200DB92AE /* Provider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Provider.swift; sourceTree = "<group>"; };
+		A3FE8F742A7B950B00DB92AE /* ViewControllerFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerFactory.swift; sourceTree = "<group>"; };
+		A3FE8F752A7B950B00DB92AE /* CoordinatorFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoordinatorFactory.swift; sourceTree = "<group>"; };
+		A3FE8F762A7B950B00DB92AE /* RootCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootCoordinator.swift; sourceTree = "<group>"; };
+		A3FE8F772A7B950B00DB92AE /* Coordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		A3FE8F8D2A7B983500DB92AE /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		A3FE8F8E2A7B983500DB92AE /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
+		A3FE8F912A7B985000DB92AE /* HomePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePresenter.swift; sourceTree = "<group>"; };
+		A3FE8F932A7B985C00DB92AE /* HomeInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeInteractor.swift; sourceTree = "<group>"; };
+		A3FE8F952A7B986700DB92AE /* HomeProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeProvider.swift; sourceTree = "<group>"; };
+		A3FE8F972A7B987000DB92AE /* HomeCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCoordinator.swift; sourceTree = "<group>"; };
+		A3FE8F992A7B98E500DB92AE /* Venues.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Venues.swift; sourceTree = "<group>"; };
+		A3FE8F9B2A7C6F7900DB92AE /* LocationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationService.swift; sourceTree = "<group>"; };
+		A3FE8F9E2A7C8E0D00DB92AE /* VenueCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VenueCell.swift; sourceTree = "<group>"; };
+		A3FE8F9F2A7C8E0D00DB92AE /* VenueCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VenueCell.xib; sourceTree = "<group>"; };
+		A3FE8FA22A7CF59600DB92AE /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
+		A3FE8FA52A7D9B3000DB92AE /* SideMenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SideMenuViewController.swift; sourceTree = "<group>"; };
+		A3FE8FA62A7D9B3000DB92AE /* SideMenuCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SideMenuCell.xib; sourceTree = "<group>"; };
+		A3FE8FA72A7D9B3000DB92AE /* SideMenuPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SideMenuPresenter.swift; sourceTree = "<group>"; };
+		A3FE8FA82A7D9B3000DB92AE /* SideMenuCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SideMenuCell.swift; sourceTree = "<group>"; };
+		A3FE8FA92A7D9B3000DB92AE /* SideMenu.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = SideMenu.storyboard; sourceTree = "<group>"; };
+		B3F7FADFF132809FB48A7CFF /* Pods-Kiwe-Task.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kiwe-Task.debug.xcconfig"; path = "Target Support Files/Pods-Kiwe-Task/Pods-Kiwe-Task.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +87,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				390AEF72EE020EE17C6377D7 /* Pods_Kiwe_Task.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7C5B1080C29860377BFE8130 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5DB3D2954FE2D710ACBB1A8C /* Pods_Kiwe_Task.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		A3FE8F3F2A7B937200DB92AE = {
 			isa = PBXGroup;
 			children = (
 				A3FE8F4A2A7B937200DB92AE /* Kiwe-Task */,
 				A3FE8F492A7B937200DB92AE /* Products */,
+				CEF2EE8C7D551ACF47E9394E /* Pods */,
+				7C5B1080C29860377BFE8130 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -57,7 +124,11 @@
 			isa = PBXGroup;
 			children = (
 				A3FE8F4B2A7B937200DB92AE /* AppDelegate.swift */,
-				A3FE8F4D2A7B937200DB92AE /* SceneDelegate.swift */,
+				A3FE8F612A7B941D00DB92AE /* Extensions */,
+				A3FE8F682A7B945900DB92AE /* Resources */,
+				A3FE8F6F2A7B94A200DB92AE /* NetworkLayer */,
+				A3FE8F722A7B950B00DB92AE /* Coordinator */,
+				A3FE8F7C2A7B963F00DB92AE /* Modules */,
 				A3FE8F4F2A7B937200DB92AE /* ViewController.swift */,
 				A3FE8F512A7B937200DB92AE /* Main.storyboard */,
 				A3FE8F542A7B937400DB92AE /* Assets.xcassets */,
@@ -67,6 +138,109 @@
 			path = "Kiwe-Task";
 			sourceTree = "<group>";
 		};
+		A3FE8F612A7B941D00DB92AE /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				A3FE8F622A7B941D00DB92AE /* UIViewController+Extensions.swift */,
+				A3FE8F632A7B941D00DB92AE /* NSObject+Extension.swift */,
+				A3FE8F642A7B941D00DB92AE /* UITableViewController+Extension.swift */,
+				A3FE8FA22A7CF59600DB92AE /* UIView+Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		A3FE8F682A7B945900DB92AE /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				A3FE8F692A7B945900DB92AE /* Constants.swift */,
+				A3FE8F6A2A7B945900DB92AE /* EnvironmentVariables.swift */,
+				A3FE8F6B2A7B945900DB92AE /* ErrorModel.swift */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		A3FE8F6F2A7B94A200DB92AE /* NetworkLayer */ = {
+			isa = PBXGroup;
+			children = (
+				A3FE8F702A7B94A200DB92AE /* Provider.swift */,
+				A3FE8F9B2A7C6F7900DB92AE /* LocationService.swift */,
+			);
+			path = NetworkLayer;
+			sourceTree = "<group>";
+		};
+		A3FE8F722A7B950B00DB92AE /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				A3FE8F732A7B950B00DB92AE /* Factories */,
+				A3FE8F762A7B950B00DB92AE /* RootCoordinator.swift */,
+				A3FE8F772A7B950B00DB92AE /* Coordinator.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		A3FE8F732A7B950B00DB92AE /* Factories */ = {
+			isa = PBXGroup;
+			children = (
+				A3FE8F742A7B950B00DB92AE /* ViewControllerFactory.swift */,
+				A3FE8F752A7B950B00DB92AE /* CoordinatorFactory.swift */,
+			);
+			path = Factories;
+			sourceTree = "<group>";
+		};
+		A3FE8F7C2A7B963F00DB92AE /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				A3FE8F7D2A7B965700DB92AE /* Home */,
+				A3FE8FA42A7D9B3000DB92AE /* SideMenu */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		A3FE8F7D2A7B965700DB92AE /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				A3FE8F9D2A7C8DF300DB92AE /* Cells */,
+				A3FE8F8D2A7B983500DB92AE /* HomeViewController.swift */,
+				A3FE8F8E2A7B983500DB92AE /* HomeViewController.xib */,
+				A3FE8F912A7B985000DB92AE /* HomePresenter.swift */,
+				A3FE8F932A7B985C00DB92AE /* HomeInteractor.swift */,
+				A3FE8F952A7B986700DB92AE /* HomeProvider.swift */,
+				A3FE8F972A7B987000DB92AE /* HomeCoordinator.swift */,
+				A3FE8F992A7B98E500DB92AE /* Venues.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		A3FE8F9D2A7C8DF300DB92AE /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				A3FE8F9E2A7C8E0D00DB92AE /* VenueCell.swift */,
+				A3FE8F9F2A7C8E0D00DB92AE /* VenueCell.xib */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		A3FE8FA42A7D9B3000DB92AE /* SideMenu */ = {
+			isa = PBXGroup;
+			children = (
+				A3FE8FA52A7D9B3000DB92AE /* SideMenuViewController.swift */,
+				A3FE8FA62A7D9B3000DB92AE /* SideMenuCell.xib */,
+				A3FE8FA72A7D9B3000DB92AE /* SideMenuPresenter.swift */,
+				A3FE8FA82A7D9B3000DB92AE /* SideMenuCell.swift */,
+				A3FE8FA92A7D9B3000DB92AE /* SideMenu.storyboard */,
+			);
+			path = SideMenu;
+			sourceTree = "<group>";
+		};
+		CEF2EE8C7D551ACF47E9394E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B3F7FADFF132809FB48A7CFF /* Pods-Kiwe-Task.debug.xcconfig */,
+				6EA17B92800C501ECFE9B6BD /* Pods-Kiwe-Task.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +248,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A3FE8F5C2A7B937400DB92AE /* Build configuration list for PBXNativeTarget "Kiwe-Task" */;
 			buildPhases = (
+				FC94C20B67FA04E97F8AA5FC /* [CP] Check Pods Manifest.lock */,
 				A3FE8F442A7B937200DB92AE /* Sources */,
 				A3FE8F452A7B937200DB92AE /* Frameworks */,
 				A3FE8F462A7B937200DB92AE /* Resources */,
+				4E5A9A1C63D339E1EB9FDBD2 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -125,7 +301,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A3FE8FAB2A7D9B3000DB92AE /* SideMenuCell.xib in Resources */,
+				A3FE8FA12A7C8E0D00DB92AE /* VenueCell.xib in Resources */,
 				A3FE8F582A7B937400DB92AE /* LaunchScreen.storyboard in Resources */,
+				A3FE8FAE2A7D9B3000DB92AE /* SideMenu.storyboard in Resources */,
+				A3FE8F902A7B983500DB92AE /* HomeViewController.xib in Resources */,
 				A3FE8F552A7B937400DB92AE /* Assets.xcassets in Resources */,
 				A3FE8F532A7B937200DB92AE /* Main.storyboard in Resources */,
 			);
@@ -133,14 +313,78 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		4E5A9A1C63D339E1EB9FDBD2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Kiwe-Task/Pods-Kiwe-Task-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Kiwe-Task/Pods-Kiwe-Task-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Kiwe-Task/Pods-Kiwe-Task-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FC94C20B67FA04E97F8AA5FC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Kiwe-Task-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		A3FE8F442A7B937200DB92AE /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A3FE8F922A7B985000DB92AE /* HomePresenter.swift in Sources */,
+				A3FE8F942A7B985C00DB92AE /* HomeInteractor.swift in Sources */,
+				A3FE8F962A7B986700DB92AE /* HomeProvider.swift in Sources */,
+				A3FE8FAA2A7D9B3000DB92AE /* SideMenuViewController.swift in Sources */,
+				A3FE8F982A7B987000DB92AE /* HomeCoordinator.swift in Sources */,
+				A3FE8F662A7B941D00DB92AE /* NSObject+Extension.swift in Sources */,
+				A3FE8F672A7B941D00DB92AE /* UITableViewController+Extension.swift in Sources */,
+				A3FE8F652A7B941D00DB92AE /* UIViewController+Extensions.swift in Sources */,
+				A3FE8FAC2A7D9B3000DB92AE /* SideMenuPresenter.swift in Sources */,
+				A3FE8FAD2A7D9B3000DB92AE /* SideMenuCell.swift in Sources */,
+				A3FE8F792A7B950B00DB92AE /* CoordinatorFactory.swift in Sources */,
+				A3FE8FA32A7CF59600DB92AE /* UIView+Extension.swift in Sources */,
+				A3FE8F6D2A7B945900DB92AE /* EnvironmentVariables.swift in Sources */,
 				A3FE8F502A7B937200DB92AE /* ViewController.swift in Sources */,
+				A3FE8F7B2A7B950B00DB92AE /* Coordinator.swift in Sources */,
+				A3FE8F6C2A7B945900DB92AE /* Constants.swift in Sources */,
+				A3FE8F6E2A7B945900DB92AE /* ErrorModel.swift in Sources */,
+				A3FE8FA02A7C8E0D00DB92AE /* VenueCell.swift in Sources */,
+				A3FE8F9C2A7C6F7900DB92AE /* LocationService.swift in Sources */,
 				A3FE8F4C2A7B937200DB92AE /* AppDelegate.swift in Sources */,
-				A3FE8F4E2A7B937200DB92AE /* SceneDelegate.swift in Sources */,
+				A3FE8F9A2A7B98E500DB92AE /* Venues.swift in Sources */,
+				A3FE8F712A7B94A200DB92AE /* Provider.swift in Sources */,
+				A3FE8F8F2A7B983500DB92AE /* HomeViewController.swift in Sources */,
+				A3FE8F7A2A7B950B00DB92AE /* RootCoordinator.swift in Sources */,
+				A3FE8F782A7B950B00DB92AE /* ViewControllerFactory.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,12 +526,13 @@
 		};
 		A3FE8F5D2A7B937400DB92AE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B3F7FADFF132809FB48A7CFF /* Pods-Kiwe-Task.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = WW3CGQFMJS;
+				DEVELOPMENT_TEAM = LZ276LGK3W;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Kiwe-Task/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -310,12 +555,13 @@
 		};
 		A3FE8F5E2A7B937400DB92AE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6EA17B92800C501ECFE9B6BD /* Pods-Kiwe-Task.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = WW3CGQFMJS;
+				DEVELOPMENT_TEAM = LZ276LGK3W;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Kiwe-Task/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;

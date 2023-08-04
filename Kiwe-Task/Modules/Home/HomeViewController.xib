@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HomeViewController" customModule="Kiwe_Task" customModuleProvider="target">
+            <connections>
+                <outlet property="containerView" destination="C7M-HN-UcO" id="7Y5-yM-t1L"/>
+                <outlet property="segmented" destination="5r2-Ky-yEV" id="jsq-Bf-xQD"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="t1F-8s-ava">
+                    <rect key="frame" x="0.0" y="59" width="393" height="759"/>
+                    <subviews>
+                        <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="5r2-Ky-yEV">
+                            <rect key="frame" x="0.0" y="0.0" width="393" height="51"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="50" id="P2W-q2-UD0"/>
+                            </constraints>
+                            <segments>
+                                <segment title="" image="list.bullet" catalog="system"/>
+                                <segment title="" image="map" catalog="system"/>
+                            </segments>
+                        </segmentedControl>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="C7M-HN-UcO">
+                            <rect key="frame" x="0.0" y="50" width="393" height="709"/>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="C7M-HN-UcO" secondAttribute="trailing" id="0OT-Kn-3Jf"/>
+                        <constraint firstItem="5r2-Ky-yEV" firstAttribute="leading" secondItem="t1F-8s-ava" secondAttribute="leading" id="Eqs-05-aPb"/>
+                        <constraint firstAttribute="bottom" secondItem="C7M-HN-UcO" secondAttribute="bottom" id="GtR-Qy-p3x"/>
+                        <constraint firstItem="5r2-Ky-yEV" firstAttribute="top" secondItem="t1F-8s-ava" secondAttribute="top" id="QZV-nL-YWg"/>
+                        <constraint firstItem="C7M-HN-UcO" firstAttribute="leading" secondItem="t1F-8s-ava" secondAttribute="leading" id="QzJ-eT-7ER"/>
+                        <constraint firstItem="C7M-HN-UcO" firstAttribute="top" secondItem="5r2-Ky-yEV" secondAttribute="bottom" id="bpw-Cn-ZBD"/>
+                        <constraint firstAttribute="trailing" secondItem="5r2-Ky-yEV" secondAttribute="trailing" id="ukN-TN-IzG"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="t1F-8s-ava" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="Ov8-yC-waI"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="t1F-8s-ava" secondAttribute="trailing" id="XMF-tO-Pvw"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="t1F-8s-ava" secondAttribute="bottom" id="ljd-FI-YI4"/>
+                <constraint firstItem="t1F-8s-ava" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="nco-so-S9x"/>
+            </constraints>
+            <point key="canvasLocation" x="-19" y="20"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="list.bullet" catalog="system" width="128" height="87"/>
+        <image name="map" catalog="system" width="128" height="112"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
